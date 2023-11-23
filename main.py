@@ -1,8 +1,8 @@
-import tkinter as tk
-from tkinter import filedialog
-from pytube import YouTube
+import tkinter as tk                #imports the tkinter module fro creating the graphical user interface
+from tkinter import filedialog      
+from pytube import YouTube          #imports youtube function from the pytube library
 
-def download_video():
+def download_video():               #creating the function to download the youtube video
     video_url = url_entry.get()
     output_path = output_entry.get()
     selected_quality = quality_var.get()
